@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="https://iwhktmkozrfsbtnafidt.supabase.co/storage/v1/object/public/fabric_uploads/logo/ThreadCounty-Logo.png" alt="ThreadCounty Logo" width="200" />
+  <h1>ThreadCounty</h1>
+  <p><strong>Transforming a photo into an industrial procurement spec sheet in seconds.</strong></p>
 
-## Getting Started
+  [![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
+  [![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?logo=supabase)](https://supabase.com)
+  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
+  [![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge)](https://threadcounty-one.vercel.app/)
+</div>
 
-First, run the development server:
+<hr />
 
+## 🚀 The Problem
+The textile industry still relies on archaic, physical methods for quality control and procurement. Identifying fabric type, thread density, GSM (Grams per Square Meter), and weave structure takes days of sending samples to labs. This delays supply chains, increases procurement friction, and restricts smaller players from competing globally.
+
+## 💡 Our Solution
+**ThreadCounty** bridges the gap between raw textile images and industrial procurement. By leveraging AI Vision models and deterministic textile engineering algorithms, we instantly analyze a single macro-photo of a fabric and generate a comprehensive, exportable procurement spec sheet.
+
+---
+
+## ✨ Key Features
+
+- **📸 Instant AI Fabric Analysis:** Upload a close-up image of any fabric. The system identifies the material type (Cotton, Silk, Polyester, etc.) and analyzes the weave structure.
+- **🧮 Textile Engineering Engine:** Uses the AI's thread count (Warp/Weft) and density data to calculate industrial metrics like Estimated GSM and Procurement Quality Grade.
+- **📄 Procurement Spec Sheets:** Auto-generates a ready-to-share technical spec sheet including shrinkage risk, tear strength estimates, and AI-driven procurement suggestions.
+- **📊 Interactive Dashboard:** Save all your analyses to the cloud. Compare different fabric samples side-by-side to make data-driven buying decisions.
+- **🔐 Secure & Cloud-Native:** Fully authenticated user flows with image storage powered by Supabase.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** Next.js 14 (App Router), React, Tailwind CSS, Framer Motion
+- **Backend:** Next.js Server Actions
+- **Database & Storage:** Supabase (PostgreSQL), Supabase Auth, Supabase Storage bucket
+- **UI Components:** shadcn/ui
+- **AI / Logic:** Vision-based heuristics & deterministic textile algorithms
+- **Deployment:** Vercel
+
+---
+
+## 🚦 Getting Started
+
+Follow these steps to run ThreadCounty locally.
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Jiteshreddy123/Threadcounty.git
+cd Threadcounty
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Setup Environment Variables
+Create a `.env.local` file in the root directory and add your Supabase keys:
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run the development server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Screenshots & Flow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*(Hackathon Judges: You can test the live application directly at [threadcounty-one.vercel.app](https://threadcounty-one.vercel.app))*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Feature | Description |
+|---|---|
+| **Dashboard** | Secure hub where buyers and manufacturers manage their textile portfolio. |
+| **Analysis Engine** | Processing engine that turns a raw JPEG into structural data. |
+| **Spec Sheet** | The final output: a professional procurement sheet ready for global trade. |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+  Built with ❤️ for the Hackathon.
+</div>
