@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://iwhktmkozrfsbtnafidt.supabase.co/storage/v1/object/public/fabric_uploads/logo/ThreadCounty-Logo.png" alt="ThreadCounty Logo" width="200" />
+  
   <h1>ThreadCounty</h1>
   <p><strong>Transforming a photo into an industrial procurement spec sheet in seconds.</strong></p>
 
@@ -70,18 +70,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ---
 
-## 🎨 Screenshots & Flow
+## 🎨 Visual Documentation
+[![View PDF Document](./preview.png)](./threadcountyscreenshots.pdf)
 
-*(Hackathon Judges: You can test the live application directly at [threadcounty-one.vercel.app](https://threadcounty-one.vercel.app))*
 
-| Feature | Description |
-|---|---|
-| **Dashboard** | Secure hub where buyers and manufacturers manage their textile portfolio. |
-| **Analysis Engine** | Processing engine that turns a raw JPEG into structural data. |
-| **Spec Sheet** | The final output: a professional procurement sheet ready for global trade. |
-
----
-
-<div align="center">
-  Built with ❤️ for the Hackathon.
-</div>
